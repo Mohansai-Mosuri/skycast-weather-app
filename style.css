@@ -6,7 +6,6 @@
 }
 
 body {
-    /* Professional background image with a dark overlay */
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1534088568595-a066f410bcda?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
@@ -18,28 +17,25 @@ body {
 }
 
 .card {
-    /* Glassmorphism Effect */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-    backdrop-filter: blur(15px); /* Blurs the background behind the card */
-    -webkit-backdrop-filter: blur(15px); /* For Safari support */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-    
     width: 90%;
-    max-width: 450px;
-    padding: 40px;
+    max-width: 480px; 
+    padding: 30px;
     border-radius: 25px;
     text-align: center;
     transition: all 0.3s ease;
 }
 
-/* Search Bar Styling */
 .search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px; /* Added space below search bar */
+    margin-bottom: 25px;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 30px;
     padding: 5px 5px 5px 20px;
@@ -61,11 +57,9 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.search button {
+button {
     border: 0;
     outline: 0;
-    background: #00feba; /* A nice pop of color for the button */
-    color: #222;
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -74,15 +68,28 @@ body {
     align-items: center;
     justify-content: center;
     transition: background 0.2s;
+    margin-left: 8px;
 }
 
-.search button:hover {
+.search-btn {
+    background: #00feba;
+    color: #222;
+}
+
+.search-btn:hover {
     background: #00cfa3;
 }
 
-/* Weather Info Styling */
+.loc-btn {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.loc-btn:hover {
+    background: rgba(255,255,255,0.4);
+}
+
 .weather {
-    /* Fades in nicely when displayed */
     animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -90,17 +97,15 @@ body {
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 5px;
-    letter-spacing: 0.5px;
 }
 
 .weather h1.temp {
-    font-size: 76px;
+    font-size: 70px;
     font-weight: 600;
-    /* Gradient text effect */
     background: linear-gradient(to bottom, #ffffff, #a1c4fd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .details {
@@ -110,13 +115,13 @@ body {
     padding: 20px 0;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+    margin-bottom: 25px;
 }
 
 .col {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     flex: 1;
 }
 
@@ -127,16 +132,45 @@ body {
 }
 
 .label {
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
     opacity: 0.7;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
-.details p {
-    font-size: 18px;
-    font-weight: 500;
+.forecast h3 {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.day-card {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 5px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.day-card .day-name {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.day-card .day-temp {
+    font-weight: bold;
 }
 
 .error {
