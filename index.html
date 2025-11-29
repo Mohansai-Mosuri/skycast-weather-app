@@ -11,14 +11,13 @@
     <div class="card">
         <div class="search">
             <input type="text" id="cityInput" placeholder="Enter city name...">
-            <button id="locationBtn" onclick="getUserLocation()" class="loc-btn">
+            <button id="locationBtn" class="loc-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 10 0 0 0-10-5 10 10 0 0 0-10 5 10 10 0 0 0 10-10zm0 14a3 3 0 1 0-3-3 3 3 0 0 0 3 3z"/></svg>
             </button>
-            <button onclick="getWeatherByCity()" class="search-btn">
+            <button id="searchBtn" class="search-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             </button>
         </div>
-
         <div class="weather" id="weatherSection" style="display: none;">
             <h2 class="city" id="cityName">--</h2>
             <h1 class="temp" id="temp">--°C</h1>
@@ -33,11 +32,9 @@
                     <p class="wind" id="condition">--</p>
                 </div>
             </div>
-
             <div class="forecast">
                 <h3>5-Day Forecast</h3>
-                <div class="forecast-container" id="forecastContainer">
-                    </div>
+                <div class="forecast-container" id="forecastContainer"></div>
             </div>
         </div>
 
