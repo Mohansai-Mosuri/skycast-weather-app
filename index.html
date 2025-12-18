@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bg-effects"></div>
+
+    <div class="card">
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off" spellcheck="false">
+            <button id="locationBtn" class="loc-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 10 0 0 0-10-5 10 10 0 0 0-10 5 10 10 0 0 0 10-10zm0 14a3 3 0 1 0-3-3 3 3 0 0 0 3 3z"/></svg>
+            </button>
+            <button id="searchBtn" class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+        </div>
+
+        <div class="weather" id="weatherSection" style="display: none;">
+            <h2 class="city" id="cityName">--</h2>
+            <h1 class="temp" id="temp">--°C</h1>
+            <div class="details">
+                <div class="col">
+                    <span class="label">Wind Speed</span>
+                    <p class="humidity" id="wind">-- km/h</p>
+                </div>
+                <div class="divider"></div>
+                <div class="col">
+                    <span class="label">Condition</span>
+                    <p class="wind" id="condition">--</p>
+                </div>
+            </div>
+            
+            <div class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-container" id="forecastContainer"></div>
+            </div>
+        </div>
+
+        <div class="error" id="errorMsg" style="display: none;">
+            <p id="errorText">City not found. Please try again.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
