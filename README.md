@@ -38,14 +38,8 @@ skycast-weather-app/
 
 ## 🔮 Future Improvements
 
-  * [ ] Add a search history feature using `localStorage`.
-  * [ ] Implement dynamic background images that change based on the weather condition (e.g., Rainy background for rain).
-  * [ ] Add unit conversion toggle (Celsius to Fahrenheit).
+  *  Add a search history feature using `localStorage`.
+  *  Implement dynamic background images that change based on the weather condition (e.g., Rainy background for rain).
+  *  Add unit conversion toggle (Celsius to Fahrenheit).
 
 -----
-
-### 👨‍💻 Author
-**Mohansai Mosuri**
-
-Make sure you manually replace `[YOUR_USERNAME]` and `[YOUR_REPO_NAME]` with your actual details so the link works when people click it!
-```
